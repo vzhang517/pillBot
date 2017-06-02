@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Buttons from './buttons';
 
 class SearchBar extends Component {
 
@@ -15,12 +16,16 @@ class SearchBar extends Component {
     return (
       <div>
       <input 
-
         value= {this.state.term}
         onChange={(event) => this.setState({ term: event.target.value })} />
+     
 
+
+      <Buttons term= {this.state.term}/>
 
       </div>
+
+
 
     );
   

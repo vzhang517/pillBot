@@ -5,14 +5,23 @@ import Buttons from './components/buttons';
 import Details from './components/details';
 
 
-const App = () => {
+class App extends Component {
+    constructor(props) {
+    super(props);
+
+
+
+
+
+
   return(
     <div>
       <SearchBar />
-      <Buttons />
+ 
       <Details />
     </div>
     );
+}
 }
 
 
