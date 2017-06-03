@@ -16,7 +16,7 @@ class Details extends Component {
 
 render() {
   return (
-  	<div>
+  	<div className="fadeInUp">
   		<p>
    		{this.props.result}
    		</p>

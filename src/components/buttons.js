@@ -12,11 +12,18 @@ class Buttons extends Component {
 
     this.handleDescription = this.handleDescription.bind(this);
     this.handleWarnings = this.handleWarnings.bind(this);
+    this.handleInteractions = this.handleInteractions.bind(this);
   }
 
 	handleDescription (event) {
 		event.preventDefault();
-		helper.descriptionQuery(this.props.term);
+		helper.descriptionQuery(this.props.term)
+		.then((response) => {
+			this.setState({ result: response[0]});
+
+		}
+
+			)
 	}
 
 	handleWarnings (event) {
@@ -30,6 +37,16 @@ class Buttons extends Component {
 			)
 	}
 
+	handleInteractions (event) {
+		event.preventDefault();
+		helper.drug_interactionsQuery(this.props.term)
+		.then((response) => {
+			this.setState({ result: response[0]});
+
+		}
+
+			)
+	}
 
 
 
@@ -38,8 +55,9 @@ class Buttons extends Component {
 render() {
   return (
   	<div>
-    <button className="btn btn-primary btn-lg" onClick={this.handleDescription}>Description</button>
-    <button className="btn btn-primary btn-lg" onClick={this.handleWarnings}>Warnings</button>
+    <button button type="button" onClick={this.handleDescription}>Description</button>
+    <button button type="button" onClick={this.handleWarnings}>Warnings</button>
+    <button button type="button" onClick={this.handleInteractions}>Interactions</button>
     <Details result= {this.state.result}/>
     </div>
   );

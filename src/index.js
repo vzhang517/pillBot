@@ -18,7 +18,7 @@ class App extends Component {
     <div>
       <SearchBar />
  
-      <Details />
+
     </div>
     );
 }

@@ -51,7 +51,8 @@ var helper = {
   return axios.get(queryURL).then(function(response) {
 
     if (response.data.results[0]) {
-      return response.data.results[0].description.drug_interactions;
+      console.log(response.data.results[0].drug_interactions);
+      return response.data.results[0].drug_interactions;
     }
     // If we don't get any results, return an empty string
     return "";
