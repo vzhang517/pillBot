@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Details = () => {
-  // if (!info) {
-  //   return <div>Drug not found try again</div>;
-  // }
+class Details extends Component {
+
+	constructor (props){
+    super (props);
+
+  }
 
 
+
+
+
+
+
+
+render() {
   return (
-    <div>
-
+  	<div className="fadeInUp">
+  		<p>
+   		{this.props.result}
+   		</p>
     </div>
   );
-};
+}
+}
+
 
 export default Details;
