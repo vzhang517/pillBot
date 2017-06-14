@@ -1,6 +1,4 @@
-![alt text][logo]
-
-[logo]: (http://runthetrap.com/wp-content/uploads/2016/01/chi-kanye-west-honorary-doctorate-art-institute-20150317.jpeg "Logo")
+![alt text](/style/images/pillbothorizontal.png)
 ======
 
 *PillBot* uses the OpenFDA API in order to relay drug information to the user.
