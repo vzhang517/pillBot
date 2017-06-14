@@ -1,4 +1,4 @@
-![Alt text](/style/images/Pillbothorizontal.png)
+![alt text](/style/images/pillbothorizontal.png)
 ======
 
 *PillBot* uses the OpenFDA API in order to relay drug information to the user.
@@ -11,7 +11,7 @@ People everywhere use perscription drugs, but not everyone reads the packets of 
 ## About PillBot
 
 PillBot was built using React as the frontend framework, we used Node.js as the server with Express as the router, and MongoDB as the database.
-```
+
 
 
 ## Starting the Application
