@@ -1,6 +1,6 @@
 ![alt text][logo]
 
-[logo]: (/style/images/pillbothorizontal.png)
+[logo]: (/style/images/pillbothorizontal.png "Logo")
 ======
 
 *PillBot* uses the OpenFDA API in order to relay drug information to the user.
