@@ -21,7 +21,7 @@ var helper = {
         
       }
       // If we don't get any results, return an empty string
-      return "";
+      return "Description not available for your selection";
     });
   },
 
@@ -38,7 +38,7 @@ var helper = {
       return response.data.results[0].warnings;
     }
     // If we don't get any results, return an empty string
-    return "";
+    return "Drug warnings not available for your selection";
   });
 },
 
@@ -55,7 +55,7 @@ var helper = {
       return response.data.results[0].drug_interactions;
     }
     // If we don't get any results, return an empty string
-    return "";
+    return "Drug interactions not available for your selection";
   });
 },
 

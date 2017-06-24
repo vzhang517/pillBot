@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+
+	<input id="search" type="text" name="search-bar">
+	<input id="search-button" type="submit" value="GO!">
+
+
+<script type="text/javascript">
+	
+
+    // constructing a queryURL variable we will use instead of the literal string
+    // inside of the ajax function
+    var searchTerm = $("#search").val().trim();
+    var queryURL = "https://api.fda.gov/drug/label.json?search=" + searchTerm;
+
+    $("#search-button").on('click', function(event){
+    	event.preventDefault();
+
+    	$.ajax({
+      url: queryURL,
+      method: "GET"
+    	}).done(function(response) {
+     	 console.log(response.results);
+   		});
+    })
+    
+</script>
+</body>
+</html>
